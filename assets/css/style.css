@@ -1,0 +1,60 @@
+*{
+    padding: 0;
+    margin: 0;
+
+}
+@font-face {
+    font-family: Vazir;
+    src: url('/assets/font/fonts/vazir-Black.eot');
+}
+
+body{
+    direction: rtl;
+    width: 100%;
+   
+}
+
+a {
+    text-decoration: none;
+
+}
+.fa-mobile-android-alt{
+    color: rgb(5, 130, 146);
+    /* background-color: blueviolet; */
+}
+
+.fa-pen{
+    color: green;
+}
+.fa-bed{
+    color: orangered;
+}
+.fa-basketball{
+    color: rgb(116, 33, 33);
+}
+.fa-tshirt{
+    color: rgb(7, 11, 219);
+}
+.fa-heart-pulse{
+    color: red;
+}
+.fa-book{
+    color: green;
+}
+.fa-hammer{
+    color: yellow;
+}
+.line {
+    /* border-bottom: 2px black; */
+    height: 0.3rem;
+    width: 100%;
+    background-color: yellow;
+    opacity: 11;
+    margin: 20px;
+  }
+
+  .undifind{
+      background-color: red!important ;
+      pointer-events: none;
+      margin-left: .2rem;
+  }
