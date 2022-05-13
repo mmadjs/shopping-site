@@ -1,0 +1,597 @@
+<html lang="fa">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/assets/css/grid.css" />
+    <link rel="stylesheet" href="/assets/css/style.css" />
+    <link
+      rel="stylesheet"
+      href="/assets/fontawesome-free-6.1.1-web/css/all.min.css"
+    />
+    <!-- <link rel="stylesheet" href="/assets/css/bootstrap.min.css" /> -->
+    <link rel="stylesheet" href="/assets/bootstrap-5.1.3-dist/css/bootstrap.rtl.min.css">
+    <title>Document</title>
+  </head>
+  <body>
+    <header>
+      <section class="top-menu container-fluid justify-content-sm-cemter flex-wrap bg-body ">
+
+        <section class="right-top-menu m-2 ">
+          <div class="logo">
+            <img src="/assets/images/logo.svg" alt="" />
+          </div>
+        </section>
+        <section class="left-top-menu">
+          <div class="d-flex mx-2 my-lg-2">
+            <div class="account" id="account">
+              <!-- <button>  ثبت نام /ورود</button> -->
+              <a class="btn  btn-outline-success" href=""> ورود</a>
+              <a class="btn  btn-info" href="">ثبت نام </a>
+            </div>
+            <div class="box-shop mx-3">
+          <button class="btn btn-outline-primary btn-basket">
+          <span id="header-notifiction-toggle" class="pointer">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cart2" viewBox="0 0 16 16">
+              <path d="M0 2.5A.5.5 0 0 1 .5 2H2a.5.5 0 0 1 .485.379L2.89 4H14.5a.5.5 0 0 1 .485.621l-1.5 6A.5.5 0 0 1 13 11H4a.5.5 0 0 1-.485-.379L1.61 3H.5a.5.5 0 0 1-.5-.5zM3.14 5l1.25 5h8.22l1.25-5H3.14zM5 13a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0zm9-1a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0z"/>
+            </svg><sup class="badge bg-danger">4</sup>
+          </span>  </button>
+
+          <section class="header-notifiction">
+            <section class="d-flex justify-content-between">
+              <span class="p-3 "> خرید ها </span>
+            </section>
+            <ul class="container">
+              <li class="row">
+                <section class="notifiction-image col-lg-6 col-md-10">
+                  <img src="/assets/images/apple13.jpg" alt="">
+                </section>
+                <section class="product-sales col-lg-6">
+                  <section class="card-body pb-0 mt-0">
+                    <p class=" fw-bolder notifiction-user">
+                      apple 13
+                      <span class="text-success">54/000/000</span>
+                    </p>
+                  </section>
+                </section>
+              </li>
+
+              <li class="row my-2">
+                <section class="notifiction-image col-lg-6 col-md-10">
+                  <img src="/assets/images/apple13.jpg" alt="">
+                </section>
+                <section class="product-sales col-6">
+                  <section class="card-body pb-0 mt-0">
+                    <p class=" fw-bolder notifiction-user">
+                      apple 13
+                      <span class="text-success">54/000/000</span>
+                    </p>
+                  </section>
+                </section>
+              </li>
+              <li class="row my-2">
+                <section class="notifiction-image col-lg-6 col-md-10">
+                  <img src="/assets/images/apple13.jpg" alt="">
+                </section>
+                <section class="product-sales col-6 ">
+                  <section class="card-body pb-0 mt-0">
+                    <p class=" fw-bolder notifiction-user">
+                      apple 13
+                      <span class="text-success">54/000/000</span>
+                    </p>
+                  </section>
+                </section>
+              </li>
+            </ul>
+          </section>
+
+
+            </div>
+          </div>
+        </section>
+
+
+        <section class="search d-flex align-items-center justify-content-end w-100 container">
+          <div class="input-group w-100 row row-cols-1  ">
+            <div class="form-outline inp w-100 position-relativ ">
+              <!-- <label class="form-label" for="form1">Search</label> -->
+
+              <input type="search" id="form1" class="form-control col-10 input-search text-center" placeholder="جستجو" />
+            </div>
+            <button  type="button" class="btn btn-primary position-absolute btn-search col-1">
+              <i class="fas fa-search"></i>
+            </button>
+          </div>
+        </section>
+
+
+
+        
+      </section>
+
+      <section class="bottom-menu">
+        
+        <div class="nav-bar-bottom  ">
+        <span class="menu-icon-open  position-absolute" onclick="open_menu()"><i class="fas fa-chart-bar"></i></span>
+        <div class="menu-hidden  d-flex  ">
+          <span class="menu-icon-close" onclick="close_menu()"><i class="fas fa-close "></i></span>
+          <ul>
+            <li><a href="">خانه</a></li>
+            <li><a href="">بیشترین خرید</a></li>
+            <li><a href="">تخفیف ها</a></li>
+            <li><a href="">محصولات</a></li>
+            <li><a href="">ارتباط با ما</a></li>
+          </ul>
+        </div>
+        <div class="menu-show">
+          <ul>
+            <li><a href="">خانه</a></li>
+            <li><a href="">بیشترین خرید</a></li>
+            <li><a href="">تخفیف ها</a></li>
+            <li><a href="">محصولات</a></li>
+            <li><a href="">ارتباط با ما</a></li>
+          </ul>
+        </div>
+        
+        </div>
+      </section>
+    </header>
+    <section class="App">
+      <main>
+        <section class="main-slider">
+          <div class="slider">
+            <div class="slider-items">
+              <div class="item active">
+                <div
+                  class="img"
+                  style="background-image: url('/assets/images/img1.jpg')"
+                ></div>
+                <div class="caption">
+                  <div class="text">
+                    <h2>بیشترین تخفیف عمرت رو با ما تجربه کن</h2>
+                    <p>بی چانه زنی تخفیف بگیر</p>
+                  </div>
+                </div>
+              </div>
+              <div class="item">
+                <div
+                  class="img"
+                  style="background-image: url('/assets/images/img4.jpg')"
+                ></div>
+                <div class="caption">
+                  <div class="text">
+                    <h2>متنوع ترین کالا و متفاوت ترین قیمت</h2>
+                    <p>با ما صاحب بهترین ها باشید</p>
+                  </div>
+                </div>
+              </div>
+              <div class="item">
+                <div
+                  class="img"
+                  style="background-image: url('/assets/images/img3.jpg')"
+                ></div>
+                <div class="caption">
+                  <div class="text">
+                    <h2>باکیفیترین و بهترین قیمت ها</h2>
+                    <p>از چرم ایرانی تا برندهای ایتالیایی</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="controls">
+              <div class="next"><i class="fas fa-chevron-right"></i></div>
+              <div class="prev"><i class="fas fa-chevron-left"></i></div>
+            </div>
+
+            <div class="progress"></div>
+          </div>
+        </section>
+
+        <section class="product  mt-5 mx-5">
+          <div>
+            <h1 class="title"> تمام محصولات</h1>
+          </div>
+          <div class="line"></div>
+          <section class="all-product">
+            <div class="tecnlogico">
+              <span><i class="fas fa-mobile-android-alt"></i></span
+              ><a href="">تکنولوژي</a>
+            </div>
+            <div class="">
+              <span><i class="fas fa-pen"></i></span><a href="">لوازم تحریر</a>
+            </div>
+            <div>
+              <span><i class="fas fa-bed"></i></span><a href="">کالا خواب </a>
+            </div>
+            <div>
+              <span><i class="fas fa-basketball"></i></span
+              ><a href="">وسایل ورزشی</a>
+            </div>
+            <div>
+              <span><i class="fas fa-tshirt"></i></span><a href="">پوشاک</a>
+            </div>
+            <div>
+              <span><i class="fas fa-heart-pulse"></i></span
+              ><a href=""> بهداشتی </a>
+            </div>
+            <div>
+              <span><i class="fas fa-book"></i></span><a href="">کالا فرهنگی</a>
+            </div>
+            <div>
+              <span><i class="fas fa-hammer"></i></span><a href="">لوازم یدک</a>
+            </div>
+          </section>
+
+          <div class="popluar">
+            <section id="main-slider-buy">
+              <h1>محصولات برتر</h1>
+              
+              <div class="line"></div>
+              <div class="slide-container">
+                <div id="right-slide" class="arrow">
+                  <i class="fas fa-chevron-right"></i>
+                </div>
+
+                <section class="all-slide" id="slider">
+                  <div class="thumbnail">
+                    <img src="/assets/images/airpad.jpg" alt="" />
+                    <div class="product-details">
+                      <h2>airpad</h2>
+                      <p><span>220000</span>180000</p>
+                      <a class="pe-none mx-1"  href="#">موجود </a>
+                      <a href="#">خرید</a>
+                    </div>
+                  </div>
+                  <div class="thumbnail">
+                    <img src="/assets/images/apple13.jpg" alt="" />
+                    <div class="product-details">
+                      <h2>apple 13</h2>
+                      <p><span>220000</span>180000</p>
+                      <a class="undifind" href="#">تمام شد </a>
+                      <a href="#">خرید</a>
+                    </div>
+                  </div>
+                  <div class="thumbnail">
+                    <img src="/assets/images/cheir.jpg" alt="" />
+                    <div class="product-details">
+                      <h2>صندلی اداری</h2>
+                      <p><span>220000</span>180000</p>
+                      <a href="#" class="pe-none mx-1">موجود</a>
+                      <a href="#">خرید</a>
+                    </div>
+                  </div>
+
+                  <div class="thumbnail">
+                    <img src="/assets/images/shoes.gpg.jpg" alt="" />
+                    <div class="product-details">
+                      <h2>کفش مجلسی </h2>
+                      <p><span>220000</span>180000</p>
+                      <a class="pe-none mx-1" class="" href="#">موجود</a>
+                      <a href="#">خرید</a>
+                    </div>
+                  </div>
+                  <div class="thumbnail">
+                    <img src="/assets/images/deress.jpg" alt="" />
+                    <div class="product-details">
+                      <h2> لباس زنانه </h2>
+                      <p><span>220000</span>180000</p>
+                      <a class="pe-none mx-1"  href="#">موجود</a>
+                      <a href="#">خرید</a>
+                    </div>
+                  </div>
+                  <div class="thumbnail">
+                    <img src="/assets/images/Tshirt.jpg" alt="" />
+                    <div class="product-details">
+                      <h2>تیشرت </h2>
+                      <p><span>220000</span>180000</p>
+                      <a class="pe-none mx-1" href="#">موجود</a>
+                      <a href="#">خرید</a>
+                    </div>
+                  </div>
+                  <div class="thumbnail">
+                    <img src="/assets/images/Pant.jpg" alt="" />
+                    <div class="product-details">
+                      <h2>شلوار کتان </h2>
+                      <p><span>220000</span>180000</p>
+                      <a class="pe-none mx-1" href="#">موجود</a>
+                      <a href="#">خرید</a>
+                    </div>
+                  </div>
+                  <div class="thumbnail">
+                    <img src="/assets/images/desk.jpg" alt="" />
+                    <div class="product-details">
+                      <h2>میز کار </h2>
+                      <p><span>220000</span>180000</p>
+                      <a class="pe-none mx-1" href="#">موجود</a>
+                      <a href="#">خرید</a>
+                    </div>
+                  </div>
+                  <div class="thumbnail">
+                    <div class="detail"></div>
+                    <img src="/assets/images/s21.jpg" alt="" />
+                    <div class="product-details">
+                      <h2>s21 ultra </h2>
+                      <p><span>220000</span>180000</p>
+                      <a class="pe-none mx-1" href="#">موجود</a>
+                      <a href="#">خرید</a>
+                    </div>
+                  </div>
+                  <div class="thumbnail">
+                    <img src="/assets/images/camera.jpg" alt="" />
+                    <div class="product-details">
+                      <h2>camera</h2>
+                      <p><span>220000</span>180000</p>
+                      
+                      <a class="undifind" href="#">تمام شد </a>
+                      <a href="#">خرید</a>
+                    </div>
+                  </div>
+                </section>
+
+                <div id="left-slide" class="arrow">
+                  <i class="fas fa-chevron-left"></i>
+                </div>
+              </div>
+            </section>
+          </div>
+          <div class="most-buy  w-100 ">
+            <h1>بیشترین خرید ها</h1>
+          <div class="line"></div>
+            <section class="cd container">
+              <div class="box-most-buy">
+                <div class="singl-team">
+                <div class="team-img">
+                <img src="/assets/images/airpad.jpg" alt="" />
+              </div>
+            </div>
+                <div class=" price  ">
+                  <p class="w-100 text-white text-center">تومان ۱۲۳/۰۰۰/۰ </p>
+                </div>
+                <div class="team-text "><p>Lorem ipsum dolor sit amet.</p>.</div>
+              </div>
+              <div class="box-most-buy   ">
+                <div class="singl-team">
+                  <div class="team-img">
+                  <img src="/assets/images/airpad.jpg" alt="" />
+                </div>
+              </div>
+                  <div class=" price ">
+                    <p class="w-100 text-white text-center">تومان ۱۲۳/۰۰۰/۰ </p>
+                  </div>
+                  <div class="team-text "><p>Lorem ipsum dolor sit amet.</p>.</div>
+              </div>
+              <div class="box-most-buy ">
+                <div class="singl-team">
+                <div class="team-img">
+                <img src="/assets/images/airpad.jpg" alt="" />
+              </div>
+            </div>
+                <div class=" price ">
+                  <p class="w-100 text-white text-center">تومان ۱۲۳/۰۰۰/۰ </p>
+                </div>
+                <div class="team-text "><p>Lorem ipsum dolor sit amet.</p>.</div>
+              </div>
+             
+              <div class="box-most-buy ">
+                <div class="singl-team">
+                  <div class="team-img">
+                  <img src="/assets/images/airpad.jpg" alt="" />
+                </div>
+              </div>
+                  <div class=" price ">
+                    <p class="w-100 text-white text-center">تومان ۱۲۳/۰۰۰/۰ </p>
+                  </div>
+                  <div class="team-text "><p>Lorem ipsum dolor sit amet.</p>.</div>
+              </div>
+
+              <div class="box-most-buy ">
+                <div class="singl-team">
+                  <div class="team-img">
+                  <img src="/assets/images/airpad.jpg" alt="" />
+                </div>
+              </div>
+                  <div class=" price ">
+                    <p class="w-100 text-white text-center">تومان ۱۲۳/۰۰۰/۰ </p>
+                  </div>
+                  <div class="team-text "><p>Lorem ipsum dolor sit amet.</p>.</div>
+              </div>
+
+              <div class="box-most-buy ">
+                <div class="singl-team">
+                  <div class="team-img">
+                  <img src="/assets/images/airpad.jpg" alt="" />
+                </div>
+              </div>
+                  <div class=" price ">
+                    <p class="w-100 text-white text-center">تومان ۱۲۳/۰۰۰/۰ </p>
+                  </div>
+                  <div class="team-text "><p>Lorem ipsum dolor sit amet.</p>.</div>
+              </div>
+      <div class="box-most-buy ">
+        <div class="singl-team">
+          <div class="team-img">
+          <img src="/assets/images/airpad.jpg" alt="" />
+        </div>
+      </div>
+          <div class=" price ">
+            <p class="w-100 text-white text-center">تومان ۱۲۳/۰۰۰/۰ </p>
+          </div>
+          <div class="team-text "><p>Lorem ipsum dolor sit amet.</p>.</div>
+      </div> <div class="box-most-buy ">
+        <div class="singl-team">
+          <div class="team-img">
+          <img src="/assets/images/airpad.jpg" alt="" />
+        </div>
+      </div>
+          <div class=" price ">
+            <p class="w-100 text-white text-center">تومان ۱۲۳/۰۰۰/۰ </p>
+          </div>
+          <div class="team-text "><p>Lorem ipsum dolor sit amet.</p>.</div>
+      </div> <div class="box-most-buy ">
+        <div class="singl-team">
+          <div class="team-img">
+          <img src="/assets/images/airpad.jpg" alt="" />
+        </div>
+      </div>
+          <div class=" price ">
+            <p class="w-100 text-white text-center">تومان ۱۲۳/۰۰۰/۰ </p>
+          </div>
+          <div class="team-text "><p>Lorem ipsum dolor sit amet.</p>.</div>
+      </div> <div class="box-most-buy ">
+        <div class="singl-team">
+          <div class="team-img">
+          <img src="/assets/images/airpad.jpg" alt="" />
+        </div>
+      </div>
+          <div class=" price ">
+            <p class="w-100 text-white text-center">تومان ۱۲۳/۰۰۰/۰ </p>
+          </div>
+          <div class="team-text "><p>Lorem ipsum dolor sit amet.</p>.</div>
+      </div> <div class="box-most-buy ">
+        <div class="singl-team">
+          <div class="team-img">
+          <img src="/assets/images/airpad.jpg" alt="" />
+        </div>
+      </div>
+          <div class=" price ">
+            <p class="w-100 text-white text-center">تومان ۱۲۳/۰۰۰/۰ </p>
+          </div>
+          <div class="team-text "><p>Lorem ipsum dolor sit amet.</p>.</div>
+      </div> <div class="box-most-buy ">
+        <div class="singl-team">
+          <div class="team-img">
+          <img src="/assets/images/airpad.jpg" alt="" />
+        </div>
+      </div>
+          <div class=" price  ">
+            <p class="w-100 text-white text-center">تومان ۱۲۳/۰۰۰/۰ </p>
+          </div>
+          <div class="team-text "><p>Lorem ipsum dolor sit amet.</p>.</div>
+      </div> 
+              </div>
+            </section>
+          </div>
+
+            <div class="line"></div>
+          <section class="more-product mb-2   ">
+
+            <section class="box-offer w-100 d-flex justify-content-center mx-3 row ">
+            
+            <div class="offer-box img1 col-md mx1 my-md-r">
+              <h2>تخفیف ها</h2>
+            <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim, aut repudiandae. Ut tempore sint impedit tenetur reiciendis sed, enim fugit</p> 
+             
+          </div>
+            <div class="offer-box img2 col-md mx-1 my-md-2 ">
+              <h2>مشارکت در فروش</h2>
+              <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim, aut repudiandae. Ut tempore sint impedit tenetur reiciendis sed, enim fugit</p> 
+            </div>
+          <div class="offer-box img3 col-md  my-md-2 ">
+              <h2>فروش اقساطی</h2>
+              <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim, aut repudiandae. Ut tempore sint impedit tenetur reiciendis sed, enim fugit</p> 
+            </div>
+          </section>  
+          </section>
+
+        </section>
+
+      </main>
+
+      
+         
+<footer class=" text-center ">
+  <div class="container p-4 all-footer">
+  
+    <section id="bottom-footer">
+      
+      <div class="row">
+       
+        <div class="col-lg-4 col-md-6 mb-4 mb-md-0">
+          <h5 class="text-uppercase">در مود خدمات ما</h5>
+
+          <ul class="list-unstyled mb-0">
+            <li>
+              <a href="#!" class="text-dark">افزایش فروش </a>
+            </li>
+            <li>
+              <a href="#!" class="text-dark">افزایش اعتبار و برندینگ</a>
+            </li>
+            <li>
+              <a href="#!" class="text-dark">مدیریت تمامی صفحات مجازی شما</a>
+            </li>
+            <li>
+              <a href="#!" class="text-dark"></a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="col-lg-4 col-md-6 mb-4 mb-md-0">
+          <h5 class="text-uppercase">ارتباط با ما</h5>
+
+          <ul class="list-unstyled mb-0">
+            <li>
+              <a href="#!" class="text-dark"> پشتیبانی تلفنی</a>
+            </li>
+            <li>
+              <a href="#!" class="text-dark">آدرس شرکت</a>
+            </li>
+            <li>
+              <a href="#!" class="text-dark">مشکلات سایت</a>
+            </li>
+            <li>
+              <a href="#!" class="text-dark"></a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="col-lg-4 col-md-6 mb-4 mb-md-0">
+          <h5 class="text-uppercase">تعدادی از مشتریان ما</h5>
+
+          <ul class="list-unstyled mb-0">
+            <li>
+              <a href="#!" class="text-dark">شرکت الف</a>
+            </li>
+            <li>
+              <a href="#!" class="text-dark">شرکت ب</a>
+            </li>
+            <li>
+              <a href="#!" class="text-dark">شرکت ب</a>
+            </li>
+            <li>
+              <a href="#!" class="text-dark">همه مشتری ها.... </a>
+            </li>
+          </ul>
+        </div>
+
+      </div>
+      
+    </section>
+    <section class="mb-4">
+      <a class="btn btn-primary   m-1" style="background-color: #3b5998" href="#!" role="button"><i class="fab fa-facebook-f"></i></a>
+      <a class="btn btn-primary   m-1" style="background-color: #55acee" href="#!" role="button"><i class="fab fa-twitter"></i></a>
+      <a class="btn btn-primary   m-1" style="background-color: #dd4b39" href="#!" role="button"><i class="fab fa-google"></i></a>
+      <a class="btn btn-primary   m-1" style="background-color: #ac2bac" href="#!" role="button"><i class="fab fa-instagram"></i></a>
+      <a class="btn btn-primary   m-1" style="background-color: #0082ca" href="#!" role="button"><i class="fab fa-linkedin-in"></i></a>
+      <a class="btn btn-primary   m-1" style="background-color: #333333" href="#!" role="button"><i class="fab fa-github"></i></a>
+    </section>
+    
+
+  </div>
+
+
+  <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2)">
+    © 2022 Create:
+    <a class="text-dark" href="https://github.com/mmadjs/news-one">github/mmadjs</a>
+  </div>
+  
+
+</footer>
+
+      
+    
+
+    </section>
+    <script src="/Script/script.js"></script>
+  </body>
+</html>
